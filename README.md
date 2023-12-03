@@ -4,7 +4,7 @@ A simple trivia game built with React, TypeScript, Redux Toolkit, and Axios.
 
 ## Features
 
-- **Quiz Component:** Interactive quiz component where users can answer multiple-choice questions.
+- **Trivia Page (main page):** Interactive quiz component where users can answer multiple-choice questions.
 - **Result Page:** Displays the total number of questions served, correct answers, and incorrect answers.
 - **Async Thunk for Quiz Fetching:** Utilizes Redux Toolkit's async thunk to fetch quiz data from an API, handling rate limiting.
 
