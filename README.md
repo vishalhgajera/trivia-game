@@ -32,7 +32,7 @@ A simple trivia game built with React, TypeScript, Redux Toolkit, and Axios.
 
 - **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/trivia-game.git
+   git clone https://github.com/vishalhgajera/trivia-game.git
    cd trivia-game
    npm install
    npm start
