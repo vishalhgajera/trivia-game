@@ -21,6 +21,7 @@ function TriviaPage() {
   useEffect(() => {
     setIsResultReady(false);
     setCorrect(0);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const nextHandler = () => {
