@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import parser from "html-react-parser";
 import Answer from "../answer/Answer";
 import Button from "../button/Button";
+import CountBox from "../countbox/CountBox";
 
 interface QuizProps {
   data: {
@@ -72,11 +74,9 @@ function Quiz({ data }: QuizProps) {
 
   return (
     <form onSubmit={submitHandler}>
-      <p className="correct-answers">
-        Question Count: {quizCount + 1}/{totalQuiz}
-      </p>
+      <CountBox count={{ quizCount, totalQuiz, correct }} />
       <article className="container">
-        <h2>{question}</h2>
+        <h2> {parser(question)}</h2>
         <div className="btn-container">
           {shuffledAnswers.map((answer, index) => (
             <Answer key={answer} ans={{ answer, correctAnswer, quizCount, userAnswer, index, handleAnswer }} />

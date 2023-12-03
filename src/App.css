@@ -340,3 +340,8 @@ Loading
 .close-btn {
   margin-right: auto;
 }
+.count-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
