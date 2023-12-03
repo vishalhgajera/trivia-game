@@ -230,9 +230,9 @@ main {
   transition: var(--transition);
   cursor: pointer;
 }
-.next-question:hover {
+.next-question:hover ,.submit-btn:hover {
   background: #c7917f;
-  color: #cfc1ac;
+  color: #fff;
 }
 
 .button-box {
